@@ -13,39 +13,17 @@
 
 let rule = "Еще не родился тот человек, который, поставил бы цель, и не смог бы стать программистом."
 
+function ruleFunction(ruless){
 switch (true) {
-    case (rule.length < 25):
+    case (ruless.length < 25):
         console.log("Все таки нет правил без исключения"); 
         break;
-    case (rule.length > 25):
+    case (ruless.length > 25):
         console.log("У меня 100 пудов все получится"); 
         break;
     default:
         console.log("50 на 50")    
 }
-
-rule = "Еще не родился"
-
-switch (true) {
-    case (rule.length < 25):
-        console.log("Все таки нет правил без исключения"); 
-        break;
-    case (rule.length > 25):
-        console.log("У меня 100 пудов все получится"); 
-        break;
-    default:
-        console.log("50 на 50")    
 }
 
-rule = "Еще не родился тот челове"
-
-switch (true) {
-    case (rule.length < 25):
-        console.log("Все таки нет правил без исключения"); 
-        break;
-    case (rule.length > 25):
-        console.log("У меня 100 пудов все получится"); 
-        break;
-    default:
-        console.log("50 на 50")    
-}
+ruleFunction(rule)

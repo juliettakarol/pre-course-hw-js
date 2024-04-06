@@ -19,11 +19,8 @@ let passportMarried = {
 // console.log(passportMarried)
 // console.log(passportMarried2)
 
-let passportMarried2 = { ...passportMarried,  married: true, address: {...passportMarried.address} } 
-
-let passportMarried3 = structuredClone(passportMarried)
-passportMarried3.address.city = 'ddd' 
-
+let passportMarried2 = { ...passportMarried,  married: true, address: { ...passportMarried.address } } 
+passportMarried2.married = true
+ 
 console.log(passportMarried); 
 console.log(passportMarried2);
-console.log(passportMarried3);
